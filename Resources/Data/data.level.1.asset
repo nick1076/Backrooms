@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34d1fbcc66e618c43ac4d58f576805ea, type: 3}
+  m_Name: data.level.1
+  m_EditorClassIdentifier: 
+  levelName: Habitable Zone
+  levelNumber: 1
+  guarenteeDistance: 3
+  spawnRoom: {fileID: 11400000, guid: ff59888b34347d34b9923661b6878c42, type: 2}
+  rooms:
+  - room: {fileID: 11400000, guid: 419b7c3b4cf32ec41aa15ff7893b4a06, type: 2}
+    chance: 41
+    maxPerLevel: -1
+    required: 0
+    distanceFromSpawn: -1
+  - room: {fileID: 11400000, guid: 8c557c8db17389c45afd65300e316fc4, type: 2}
+    chance: 83
+    maxPerLevel: -1
+    required: 0
+    distanceFromSpawn: -1
+  - room: {fileID: 11400000, guid: 98776237288bb6843841ce5c92b1dcb2, type: 2}
+    chance: 14
+    maxPerLevel: -1
+    required: 0
+    distanceFromSpawn: -1
+  - room: {fileID: 11400000, guid: 2d35be353a0f1c849a693cbf5ba4fd55, type: 2}
+    chance: 14
+    maxPerLevel: -1
+    required: 0
+    distanceFromSpawn: -1
+  - room: {fileID: 11400000, guid: 3d7200731f5b0e14baddc281ba086725, type: 2}
+    chance: 14
+    maxPerLevel: -1
+    required: 0
+    distanceFromSpawn: -1
+  - room: {fileID: 11400000, guid: b185ecf614c69ec42af9f1307d97794a, type: 2}
+    chance: 14
+    maxPerLevel: -1
+    required: 0
+    distanceFromSpawn: -1
+  - room: {fileID: 11400000, guid: a3d3f950574f9a54d9390710668190f5, type: 2}
+    chance: 14
+    maxPerLevel: -1
+    required: 0
+    distanceFromSpawn: -1
+  - room: {fileID: 11400000, guid: 1ec3d41cf52f88d40ab7b1ea3f78d458, type: 2}
+    chance: 14
+    maxPerLevel: -1
+    required: 0
+    distanceFromSpawn: -1
+  - room: {fileID: 11400000, guid: 0ae2237581042b940818c14b349bb48e, type: 2}
+    chance: 14
+    maxPerLevel: -1
+    required: 0
+    distanceFromSpawn: -1
+  - room: {fileID: 11400000, guid: fd8202f0e4e36a54eb5f32416be9a982, type: 2}
+    chance: 41
+    maxPerLevel: -1
+    required: 0
+    distanceFromSpawn: -1
+  - room: {fileID: 11400000, guid: 72038b06caea965479230fa67683573e, type: 2}
+    chance: 41
+    maxPerLevel: -1
+    required: 0
+    distanceFromSpawn: -1
+  - room: {fileID: 11400000, guid: c0d56b68818611b428ef727d32d38945, type: 2}
+    chance: 83
+    maxPerLevel: -1
+    required: 0
+    distanceFromSpawn: -1
+  - room: {fileID: 11400000, guid: 32ebfb8e68f772645b1e1bdbde6d5678, type: 2}
+    chance: 83
+    maxPerLevel: -1
+    required: 0
+    distanceFromSpawn: -1
+  - room: {fileID: 11400000, guid: bc071f56ed623104ca16edddc36601b0, type: 2}
+    chance: 1
+    maxPerLevel: 1
+    required: 1
+    distanceFromSpawn: 40
+  - room: {fileID: 11400000, guid: be1dfd29a6a853f4f991ce3f74b430ec, type: 2}
+    chance: 100
+    maxPerLevel: -1
+    required: 0
+    distanceFromSpawn: -1

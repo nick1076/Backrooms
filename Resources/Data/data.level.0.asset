@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34d1fbcc66e618c43ac4d58f576805ea, type: 3}
+  m_Name: data.level.0
+  m_EditorClassIdentifier: 
+  levelName: Tutorial Level
+  levelNumber: 0
+  guarenteeDistance: 4
+  spawnRoom: {fileID: 11400000, guid: eea083b67aca4ab46820e56302f2cd47, type: 2}
+  rooms:
+  - room: {fileID: 11400000, guid: 4e1d1b1d24821c145aeeaad215735e8d, type: 2}
+    chance: 1
+    maxPerLevel: 2
+    required: 1
+    distanceFromSpawn: 20
+  - room: {fileID: 11400000, guid: eea083b67aca4ab46820e56302f2cd47, type: 2}
+    chance: 45
+    maxPerLevel: -1
+    required: 0
+    distanceFromSpawn: -1
+  - room: {fileID: 11400000, guid: be1dfd29a6a853f4f991ce3f74b430ec, type: 2}
+    chance: 1
+    maxPerLevel: 10
+    required: 1
+    distanceFromSpawn: -1

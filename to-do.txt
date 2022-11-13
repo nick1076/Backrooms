@@ -1,0 +1,10 @@
+TO DO:
+
+- Fix Main Menu clipping walls from over doors
+- Make seeds work (player spawn)
+- Organize files (rid blood files?)
+- fix cutscene
+- Make running steps slower
+- Make level loads bigger
+- GET CARPET SOUNDS
+- Fix holes in walls for level 1
