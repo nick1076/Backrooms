@@ -1,0 +1,5 @@
+TO DO:
+
+- Fix nocliping held items into objects
+- Fix footstep sounds
+- add randomly picked sounds on collide

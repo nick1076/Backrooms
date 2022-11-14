@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee3674a2997e50a4f9c6cb657720dc6e, type: 3}
+  m_Name: item_crumpledDoor
+  m_EditorClassIdentifier: 
+  name: Crumpled Paper
+  heldSprite: {fileID: 0}
+  uiSprite: {fileID: 0}
+  drop: {fileID: 3953887780378891550, guid: 454f2edb813f59549b046ef1149e684f, type: 3}
+  contrabandTier: 0
+  hasCreatedObject: 1
+  createdObject: {fileID: 4680991106589661116, guid: 1be9df8d3a8ffb54299ed9dabd778a92, type: 3}

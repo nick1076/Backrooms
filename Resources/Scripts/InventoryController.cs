@@ -230,7 +230,7 @@ public class InventoryController : MonoBehaviour
                 attachedInventory.SelectItem(4);
             }
 
-            if (Input.GetKeyDown(KeyCode.G) && attachedInventory.RetrieveCurrentlySelected() != null)
+            if (Input.GetKeyDown(KeyCode.E) && attachedInventory.RetrieveCurrentlySelected() != null)
             {
                 if (attachedInventory.RetrieveCurrentlySelected() != null)
                 {
@@ -246,6 +246,34 @@ public class InventoryController : MonoBehaviour
                         {
                             GameObject dropped = Instantiate(potentialDrop.item.drop, dropTransform.position, Quaternion.identity);
                             dropped.GetComponent<PhysicalItem>().item = potentialDrop;
+                        }
+
+                        return;
+                    }
+                }
+            }
+
+            if (Input.GetKeyDown(KeyCode.Mouse0) && attachedInventory.RetrieveCurrentlySelected() != null)
+            {
+                if (attachedInventory.RetrieveCurrentlySelected() != null)
+                {
+                    Item potentialDrop = new Item
+                    {
+                        item = attachedInventory.RetrieveCurrentlySelected().item,
+                        data = attachedInventory.RetrieveCurrentlySelected().data
+                    };
+
+                    if (attachedInventory.RemoveItem(attachedInventory.RetrieveCurrentlySelected().item) == true)
+                    {
+                        if (potentialDrop.item.drop != null)
+                        {
+                            GameObject dropped = Instantiate(potentialDrop.item.drop, dropTransform.position, Quaternion.identity);
+                            dropped.GetComponent<PhysicalItem>().item = potentialDrop;
+
+                            if (dropped.GetComponent<Rigidbody>() != null)
+                            {
+                                dropped.GetComponent<Rigidbody>().AddRelativeForce(cameraTransform.forward * 1000);
+                            }
                         }
                     }
                 }
@@ -267,7 +295,7 @@ public class InventoryController : MonoBehaviour
                     Debug.DrawRay(cameraTransform.transform.position, cameraTransform.transform.TransformDirection(Vector3.forward) * 1000, Color.green);
                     if (hitForward.collider.gameObject.GetComponent<PhysicalItem>() != null)
                     {
-                        if (Input.GetKeyDown(KeyCode.Mouse1) && attachedInventory.RetrieveCurrentlySelected().item == null)
+                        if (Input.GetKeyDown(KeyCode.E) && attachedInventory.RetrieveCurrentlySelected().item == null)
                         {
                             if (attachedInventory.AddItem(hitForward.collider.gameObject.GetComponent<PhysicalItem>().item) == true)
                             {

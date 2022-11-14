@@ -1,6 +1,8 @@
 
 Sources:
 
+MODELS:
+
 TV: https://sketchfab.com/3d-models/tv-free-3d-model-a2661c6aba3c41f39e58f85a447168b9
 
 VHS: https://sketchfab.com/3d-models/vhs-c11a8596c3314677a8b9321e141de275
@@ -22,3 +24,9 @@ Pencil: https://www.1001fonts.com/thin-pencil-handwriting-font.html
 Bin: https://sketchfab.com/3d-models/office-bin-bb540fc9fcb04a5aa13a5d9b72918f8f#download
 
 Crumpled Paper: https://sketchfab.com/3d-models/crumbled-paper-c1a4b48d49dd402eb5731c93f130ce23
+
+SOUNDS:
+
+Paper Collide: https://freesound.org/people/MattRuthSound/sounds/562038/
+
+Casset Collide: https://freesound.org/people/Bexhillcollege/sounds/272065/
