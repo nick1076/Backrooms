@@ -18,9 +18,18 @@ public class InventoryController : MonoBehaviour
     public bool player = false;
 
     public GameObject createdItem;
+    public UnityEngine.UI.Image cursor;
+    public Color normalCursorColor;
+    public Color itemHoverCursorColor;
 
     private ItemData lastRendered;
     private bool dumpedInven;
+    private bool vhsAvaliable;
+
+    private void Start()
+    {
+        cursor.color = normalCursorColor;
+    }
 
     public void DumpAllItems()
     {
@@ -199,6 +208,7 @@ public class InventoryController : MonoBehaviour
 
         if (!controlingInventory)
         {
+            cursor.color = normalCursorColor;
             return;
         }
 
@@ -230,7 +240,7 @@ public class InventoryController : MonoBehaviour
                 attachedInventory.SelectItem(4);
             }
 
-            if (Input.GetKeyDown(KeyCode.E) && attachedInventory.RetrieveCurrentlySelected() != null)
+            if (Input.GetKeyDown(KeyCode.E) && attachedInventory.RetrieveCurrentlySelected() != null && !vhsAvaliable)
             {
                 if (attachedInventory.RetrieveCurrentlySelected() != null)
                 {
@@ -253,7 +263,7 @@ public class InventoryController : MonoBehaviour
                 }
             }
 
-            if (Input.GetKeyDown(KeyCode.Mouse0) && attachedInventory.RetrieveCurrentlySelected() != null)
+            if (Input.GetKeyDown(KeyCode.Mouse0) && attachedInventory.RetrieveCurrentlySelected() != null && !vhsAvaliable)
             {
                 if (attachedInventory.RetrieveCurrentlySelected() != null)
                 {
@@ -295,17 +305,34 @@ public class InventoryController : MonoBehaviour
                     Debug.DrawRay(cameraTransform.transform.position, cameraTransform.transform.TransformDirection(Vector3.forward) * 1000, Color.green);
                     if (hitForward.collider.gameObject.GetComponent<PhysicalItem>() != null)
                     {
+                        vhsAvaliable = false;
+                        cursor.color = itemHoverCursorColor;
                         if (Input.GetKeyDown(KeyCode.E) && attachedInventory.RetrieveCurrentlySelected().item == null)
                         {
                             if (attachedInventory.AddItem(hitForward.collider.gameObject.GetComponent<PhysicalItem>().item) == true)
                             {
                                 Destroy(hitForward.collider.gameObject);
+                                cursor.color = normalCursorColor;
                             }
                         }
+                    }
+                    else
+                    {
+                        if (hitForward.collider.gameObject.GetComponent<VHSplayer>() != null)
+                        {
+                            vhsAvaliable = true;
+                            if (Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.E))
+                            {
+                                hitForward.collider.gameObject.GetComponent<VHSplayer>().UsePlayer();
+                            }
+                        }
+                        cursor.color = normalCursorColor;
                     }
                 }
                 else
                 {
+                    vhsAvaliable = false;
+                    cursor.color = normalCursorColor;
                     Debug.DrawRay(cameraTransform.transform.position, cameraTransform.transform.TransformDirection(Vector3.forward) * 1000, Color.red);
                 }
             }

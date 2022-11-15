@@ -425,7 +425,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item:
     item: {fileID: 11400000, guid: dd8167aa138b75f4fae1c4da7f780636, type: 2}
-    data: null
+    data: vhs_1
 --- !u!114 &813281202307343154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -440,6 +440,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onCollideEffect: {fileID: 7727014715686545982, guid: 6d0b93d54f33b5540b2e22c5211a17e4, type: 3}
   toneDifferenceRange: 0.05
+  potentialSounds:
+  - {fileID: 8300000, guid: 07c7bc281617c834e8742a7bdc19d04e, type: 3}
+  - {fileID: 8300000, guid: 1eb74cccc7fe2eb4f8a29d6d65bb1cb5, type: 3}
 --- !u!1 &6847070459785013834
 GameObject:
   m_ObjectHideFlags: 0
