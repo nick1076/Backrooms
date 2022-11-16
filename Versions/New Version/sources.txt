@@ -25,6 +25,8 @@ Bin: https://sketchfab.com/3d-models/office-bin-bb540fc9fcb04a5aa13a5d9b72918f8f
 
 Crumpled Paper: https://sketchfab.com/3d-models/crumbled-paper-c1a4b48d49dd402eb5731c93f130ce23
 
+Flower Pot: https://sketchfab.com/3d-models/plant-in-pot-00c35e3215f74e4f9e33b6b7a14a87cf#download
+
 SOUNDS:
 
 Paper Collide: https://freesound.org/people/MattRuthSound/sounds/562038/

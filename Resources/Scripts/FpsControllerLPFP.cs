@@ -35,6 +35,7 @@ public class FpsControllerLPFP : MonoBehaviour
     public bool moveVarLocked;
     public bool canMove;
     public bool canCrouch = true;
+    public bool canRun = true;
     public bool mouseOut = false;
     public bool stopVelControl;
     [Space]
@@ -590,7 +591,7 @@ public class FpsControllerLPFP : MonoBehaviour
 
         if (!isCrouching)
         {
-            if (input.Run && currentSprintTime > 0)
+            if (input.Run && currentSprintTime > 0 && canRun)
             {
                 finalSpeed = baseCrouchSpeed * speedStepMultiplierRun;
             }
@@ -1023,7 +1024,7 @@ public class FpsControllerLPFP : MonoBehaviour
             shift = false;
         }
 
-        if (currentSprintTime <= 0)
+        if (currentSprintTime <= 0 || !canRun)
         {
             shift = false;
         }

@@ -14,7 +14,6 @@ public class VHSplayer : MonoBehaviour
             if (GameObject.Find("player").GetComponent<Inventory>() != null)
             {
                 Item cItem = GameObject.Find("player").GetComponent<Inventory>().RetrieveCurrentlySelected();
-                print("h");
                 if (cItem != null)
                 {
                     string toLoad = "";
@@ -36,7 +35,7 @@ public class VHSplayer : MonoBehaviour
     {
         yield return new WaitForSeconds(.45f);
         Destroy(GameObject.Find("player"));
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(8.55f);
         UnityEngine.SceneManagement.SceneManager.LoadScene(lvl);
     }
 }
