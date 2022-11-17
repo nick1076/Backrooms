@@ -27,6 +27,12 @@ Crumpled Paper: https://sketchfab.com/3d-models/crumbled-paper-c1a4b48d49dd402eb
 
 Flower Pot: https://sketchfab.com/3d-models/plant-in-pot-00c35e3215f74e4f9e33b6b7a14a87cf#download
 
+Door: https://sketchfab.com/3d-models/commercial-door-b6d4f852379f4504b2e7abc28a7dc740
+
+Window: https://sketchfab.com/3d-models/residential-window-ae11104237314463a61251fd46ded4b4
+
+Trees: https://sketchfab.com/3d-models/tall-bush-acc6c43913864ace8d5942d65417ab35
+
 SOUNDS:
 
 Paper Collide: https://freesound.org/people/MattRuthSound/sounds/562038/
