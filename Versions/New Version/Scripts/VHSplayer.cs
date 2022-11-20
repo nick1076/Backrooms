@@ -19,7 +19,7 @@ public class VHSplayer : MonoBehaviour
                     string toLoad = "";
                     if (cItem.data == "vhs_1")
                     {
-                        toLoad = "level";
+                        toLoad = "level.vhs.theEntry";
                     }
                     if (toLoad != "")
                     {
