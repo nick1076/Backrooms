@@ -35,6 +35,10 @@ Trees: https://sketchfab.com/3d-models/tall-bush-acc6c43913864ace8d5942d65417ab3
 
 Blinds: https://sketchfab.com/3d-models/window-blinds-883b037fccfd48d1910e1c1b799381c5
 
+Power Switch: https://sketchfab.com/3d-models/lever-power-switch-374608f75c114b8a9bf41dbc02c51c50
+
+Work Light: https://sketchfab.com/3d-models/industrial-work-light-ff0abe17dc64498191bb41c905d00ab0
+
 SOUNDS:
 
 Paper Collide: https://freesound.org/people/MattRuthSound/sounds/562038/
