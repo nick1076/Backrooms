@@ -439,10 +439,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onCollideEffect: {fileID: 7727014715686545982, guid: 6d0b93d54f33b5540b2e22c5211a17e4, type: 3}
-  toneDifferenceRange: 0.05
+  toneDifferenceRange: 0.01
   potentialSounds:
   - {fileID: 8300000, guid: 07c7bc281617c834e8742a7bdc19d04e, type: 3}
   - {fileID: 8300000, guid: 1eb74cccc7fe2eb4f8a29d6d65bb1cb5, type: 3}
+  propItem: 0
 --- !u!1 &6847070459785013834
 GameObject:
   m_ObjectHideFlags: 0

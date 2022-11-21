@@ -158,3 +158,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onCollideEffect: {fileID: 2262493548936289102, guid: bf1cf283ab56c7a49b7c4d5d8f42a422, type: 3}
+  toneDifferenceRange: 0.25
+  potentialSounds: []
+  propItem: 0

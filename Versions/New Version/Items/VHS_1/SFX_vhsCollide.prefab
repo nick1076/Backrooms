@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5372505128503355621
+--- !u!1 &7727014715686545982
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3319076098358793222}
-  - component: {fileID: 3922370603541900623}
+  - component: {fileID: 1133389928461506269}
+  - component: {fileID: 1718731608171933588}
   m_Layer: 0
-  m_Name: SFX_vhsCollide2
+  m_Name: SFX_vhsCollide
   m_TagString: Blood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3319076098358793222
+--- !u!4 &1133389928461506269
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5372505128503355621}
+  m_GameObject: {fileID: 7727014715686545982}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 7.5150023, y: -0.04330015, z: 0.89568794}
   m_LocalScale: {x: 2, y: 2, z: 2}
@@ -31,20 +31,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &3922370603541900623
+--- !u!82 &1718731608171933588
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5372505128503355621}
+  m_GameObject: {fileID: 7727014715686545982}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1eb74cccc7fe2eb4f8a29d6d65bb1cb5, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 07c7bc281617c834e8742a7bdc19d04e, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 0.5
-  m_Pitch: 0.81304073
+  m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0

@@ -614,7 +614,7 @@ public class FpsControllerLPFP : MonoBehaviour
                 {
                     AudioSource step = Instantiate(baseFootstepObj, footstepSoundOrigin.transform.position, Quaternion.identity).GetComponent<AudioSource>();
                     step.clip = currentWalkingMat.footstepSounds[random];
-                    step.volume = currentWalkingMat.footstepSoundVolume[random];
+                    step.volume = 0;// currentWalkingMat.footstepSoundVolume[random];
                     step.Play();
                 }
 
